@@ -39,7 +39,14 @@ defmodule ModestGreeterWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(ModestGreeterWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(
+        ModestGreeterWeb.Gettext,
+        "errors",
+        msg,
+        msg,
+        count,
+        opts
+      )
     else
       Gettext.dgettext(ModestGreeterWeb.Gettext, "errors", msg, opts)
     end

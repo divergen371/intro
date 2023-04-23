@@ -10,8 +10,13 @@ use Mix.Config
 # Configures the endpoint
 config :modest_greeter, ModestGreeterWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "4k5efWfyOtPKtxL9udPM/X6ZJbvb7JygfNreqy8L9hoMFvkZSzr6K/wBLDZdLhVv",
-  render_errors: [view: ModestGreeterWeb.ErrorView, accepts: ~w(html json), layout: false],
+  secret_key_base:
+    "4k5efWfyOtPKtxL9udPM/X6ZJbvb7JygfNreqy8L9hoMFvkZSzr6K/wBLDZdLhVv",
+  render_errors: [
+    view: ModestGreeterWeb.ErrorView,
+    accepts: ~w(html json),
+    layout: false
+  ],
   pubsub_server: ModestGreeter.PubSub,
   live_view: [signing_salt: "lsAEpDm3"]
 
