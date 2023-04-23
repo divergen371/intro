@@ -5,7 +5,9 @@ defmodule ModestGreeterWeb.HomeView do
     case assigns.view_template do
       "about.html" ->
         "ModestGreeter - このサイトについて"
-      _ -> "ModestGreeter"
+
+      _ ->
+        "ModestGreeter"
     end
   end
 end
