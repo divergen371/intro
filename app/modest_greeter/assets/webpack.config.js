@@ -48,7 +48,7 @@ module.exports = (env, options) => {
       new MiniCssExtractPlugin({ filename: '../css/app.css' }),
       new CopyWebpackPlugin([{ from: 'static/', to: '../' },
       {
-        from: 'node_module/@fortawesome/fontawesome-free/webfonts/',
+        from: 'node_modules/@fortawesome/fontawesome-free/webfonts/',
         to: '../webfonts'
       }])
     ]
