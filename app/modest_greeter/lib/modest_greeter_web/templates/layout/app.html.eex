@@ -9,6 +9,14 @@
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
   <body>
-    <%= @inner_content %>
+    <header>
+      <h1>ModestGreeter</h1>
+    </header>
+    <main>
+      <%= @inner_content %>
+    </main>
+    <footer>
+      &copy; 2023 Coregenik Inc.
+    </footer>
   </body>
 </html>
